@@ -1,0 +1,11 @@
+<p>
+  Name:<input type="text" name="name" id="name"/>
+</p>
+<p>
+  YOB:<select [(ngModel)]="selectedVal" (change)="onChange()">
+    <option *ngFor="let i of year">{{i}}</option>
+  </select>
+</p>
+<p>
+  <input type="submit" value="Submit"/>
+</p>
